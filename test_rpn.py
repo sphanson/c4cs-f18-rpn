@@ -15,6 +15,9 @@ class TestBasics(unittest.TestCase):
     def test_divide(self):
         result = rpn.calculate("6 3 /")
         self.assertEqual(2, result)
+    def test_carat(self):
+        result = rpn.calculate("5 3 ^")
+        self.assertEqual(125, result)
 
 if __name__ == '__main__':
     unittest.main()
